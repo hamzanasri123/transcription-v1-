@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "cogent-osprey-336709",
+  "private_key_id": "f424dc67d60c14be6d490f49c94c49dc30f45c6e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDaRBg9RCG6o6Ou\nEUhQ7OB5KIf8arnAOEtDw1TYTMrtrzakrKRUhhwgubz0catrh1HTlUxkEidWBQWZ\nc6qWgYjh4HTyneHoc8hNKeLNShowmgf7yAHLpiBAt4humDoL76U01ou7XGwXOuSU\nHIWF4EAaUJiG9ZUL1FKMw9/MrcbVYGSLbzaMBAb0Kva4BSE96q+/v8OOJMk8Pj7a\nC8WXgCC8Ws+uFlDhRvTYIG6Z1zzbaqZNIdgFuZRD2Anj9H41BLi7giJMevbKV/42\niCmPznQIqYxcJ6ULVDkPSIdFW2Mi37mP087fV87bLCIHWZx10oS9vvi0Gw9KnPO0\nNDOecRtVAgMBAAECggEANWX6bia4f8JgHYph4FaLdmjJmCH+Lr42/62OmNp0vSCk\nJDaOf5VN1V3LkhwrHYP+K1730PW2BO/2lju7jNXFCMnSoraomaeV5fbs41+RN7m/\nYURl2A5dDqg4KyJ39QqcpugkSGLMmQRR/sBZlE6wMB/uqPn1DG9WANU88ATFw9a9\nE5XbMZpQlpfiPetzHKoqkd1kKi4Ysn3uPnsyL2S5MpgMDdp4h0seh9DS3os4rO94\nW1OUpl3BXHRQGhqCcToxoynpTMR/hjmAitWzEedsH0mYlZDhIvmsSMB3eCh+9XFq\n9cUMdUT88Ti2vphUDhi+oeHiK/Z6nJAdttEPpT0d4QKBgQD1h9fG6/lG4gGPTdCs\n4y3MJqGt8i3OvXUDnkxmmg5zUvj4Mtls44yKhzkS5RLh8QkAWPw/vA3hsvuKUpcr\no3S8hJz6SQa0SKiuMj1m5aMCEbuml0fwqwNtqZ8yBWYtrmspeWbKfouFPjZAV7QQ\nYJGuByQSkSAywNPIS7pxXHd6xQKBgQDjkqMaZ3z++w79anszrhY+AiFZXsbVUND2\nomneDvwbKSkmaenqCcnfrelNniQURuW8Kpwddz2k8WqXhumi0h7//B0KNYM3PyCz\n8CuYXhzydc3c11TvlzARH9PhYOGn530K6lmZHhtDR27cX09JEIW7Fs+3LGXWGFTr\np5hV3SZnUQKBgFKCBrGzBH6cXhfQ92nRocczyCsS8e/CXLsNi/ECng6E+GM3ezcL\nNGQs0rIVxoWkoPi77nBgem243qx52pDwib779WBp/9W/gOegvF+ClYeRe/Sca7Fl\nVm6YjIWbqN16+knioPc1FR9+a26tyjWirfHENowCtsY3ZDOvtwR3JTNdAoGAOhOR\nBksEzjmZ8Lg86spxqK94fUs/qO6v9VErfV0Ln47YjpIW/QA0gZ3rXUCPapFRTbz+\nDFMC61Yk4riuZTwEZ0Waz6EqdG3q1aDkL0VNU98Wg1Z8uYw22xfpRaoozGW6No/p\n/7Z8NKZFN34nSLkrt7wxlEiDUKjy+xTRPpBqnZECgYBljPQuaCTliA+HKAJOIyDa\nNKLuPVHp2cEGQwlBrqSmGalDNVeM7+QIKIBLw0Rbltwveq1e/iRUrdaD6fNFiJEF\npvOxLEEdtLlP0dL5OnNxfb8l+k4KZlE3onZpHrp6w+PfH7sC1ciDg3mlmekJM0cI\nA745eMQzbZlm6o6YzW8xCA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "service@cogent-osprey-336709.iam.gserviceaccount.com",
+  "client_id": "117111651135223282213",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/service%40cogent-osprey-336709.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

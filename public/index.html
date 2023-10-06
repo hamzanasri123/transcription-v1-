@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <h2>Upload de vidéo pour transcription</h2>
+    <form action="/transcrire" method="post" enctype="multipart/form-data">
+        <input type="file" name="video" accept="video/*" required>
+        <button type="submit">Transcrire</button>
+        <input type="checkbox" id="enUS" name="lang" value="en-US">
+        <label for="enUS">Anglais</label>
+
+        <input type="checkbox" id="frFR" name="lang" value="fr-FR">
+        <label for="frFR">Français</label>
+    </form>
+    <div id="progressDiv" style="display: none;">
+        <label>Progression : </label>
+        <progress id="progressBar" value="0" max="100"></progress> <span id="progressLabel">0%</span>
+    </div>
+    <div id="transcriptionResult">
+        <!-- reponse API -->
+    </div>
+
+    <script>
+        const form = document.querySelector('form');
+
+        function updateProgress(value) {
+            const progressBar = document.getElementById('progressBar');
+            const progressLabel = document.getElementById('progressLabel');
+            progressBar.value = value;
+            progressLabel.textContent = value + "%";
+        }
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(form);
+            const progressDiv = document.getElementById('progressDiv');
+            progressDiv.style.display = 'block';
+            // Initialisez la barre de progression à 0%
+
+            updateProgress(0);
+            try {
+                const response = await fetch('/transcrire', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                // exmpl pg bar
+                for (let i = 0; i <= 100; i += 10) {
+                    setTimeout(() => {
+                        updateProgress(i);
+                    }, i * 100);  // Ceci n'est qu'une simulation. 
+                }
+
+                const data = await response.json();
+                console.log(data.transcription);
+
+                updateProgress(100);  // Mettez la barre de progression à 100% lorsque la transcription est terminée
+
+                const resultDiv = document.getElementById('transcriptionResult');
+                resultDiv.innerHTML = `<h3>Transcription :</h3><p>${data.transcription}</p>`;
+            } catch (error) {
+                console.error('Erreur:', error);
+                alert('Erreur lors de la transcription. Veuillez réessayer.');
+            }
+        });
+    </script>
+</body>
+
+</html>
